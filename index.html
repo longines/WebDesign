@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang='en'>
 	<head>
@@ -36,7 +37,7 @@
             	  			<li><a href="#"><span class="glyphicon glyphicon-star"></span> Top Destinations</a></li>
 
            	   				<li class="dropdown">
-                			<a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span> About Us<b class="caret"></b></a>
+                			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> About Us<b class="caret"></b></a>
                 			<ul class="dropdown-menu">
                   				<li><a href="#">Company Details</a></li>
                   				<li><a href="#">Contact Us</a></li>
@@ -80,7 +81,7 @@
         	<div class="row">
            		<div class="col-md-4">
                 <!-- ACTIVATE LIGHTBOX!!! COMBINE WITH BOOTSTRAP!!! -->
-                <a href="images/feat1.jpg" data-lightbox="places" data-title='Vacation Titles'><img class="img-responsive img-circle" src="images/feat1.jpg"></a>
+                <a href="images/feat1.jpg" data-lightbox="places"><img class="img-responsive img-circle" src="images/feat1.jpg"></a>
            			<h3 class="text-center">Type 1</h3>
            			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis. Mauris id turpis diam. Ut pellentesque justo dolor, nec eleifend mauris euismod vitae. Morbi diam est, ornare non felis sit amet, elementum ultricies ante. Mauris id condimentum mauris. Nunc eleifend et enim eu sagittis. In congue, sapien nec vulputate pulvinar, tellus leo porttitor nibh, at rhoncus tellus lacus ac metus. Vestibulum pharetra scelerisque est sed tincidunt. Ut congue, quam a molestie luctus, quam orci congue erat, laoreet interdum lectus justo ac urna. Vestibulum eleifend tellus sit amet urna egestas tempus. Proin ac pretium nisi. Phasellus sit amet tincidunt magna, quis tincidunt sapien. Quisque quis pretium diam, ut consectetur ligula. Sed condimentum purus viverra auctor porta. Ut in bibendum velit. Curabitur eu leo mattis, pretium sapien sed, iaculis mauris.</p>
            			<a href="#" class="btn btn-success">Book Now @ $599</a>
@@ -130,5 +131,11 @@
     <script src='includes/bootstrap/js/bootstrap.js'></script>
     <script src='includes/bootstrap/js/bootstrap.min.js'></script>
     <script src='includes/lightbox/js/lightbox.min.js'></script>
+    
+    <script>
+    $(document).ready(function(){
+      $('.dropdown-toggle').dropdown();
+    });
+    </script>
 	</body>
 </html>
